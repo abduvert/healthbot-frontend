@@ -100,14 +100,14 @@ export default function ChatBox({ currentChatId }) {
   }
 
   return (
-    <div className="flex justify-center items-center h-screen p-4">
-      <Card className="w-full max-w-4xl h-full p-4 relative">
+    <div className="flex justify-center items-center h-screen p-4 bg-gray-900">
+      <Card className="w-full max-w-4xl h-full p-4 relative bg-gray-800 text-white shadow-lg border-none">
         {/* Pay button at the top right */}
-        <Button onClick={handlePayments} className="absolute cursor-pointer text-sm">
+        <Button onClick={handlePayments} className="absolute cursor-pointer text-sm bg-blue-900">
           Pay
         </Button>
         {/* Sign out button at the top right */} 
-        <Button onClick={handleSignOut} className="absolute cursor-pointer top-4 right-4 text-sm">
+        <Button onClick={handleSignOut} className="absolute cursor-pointer top-4 right-4 text-sm bg-red-800">
           Sign Out
         </Button>
 

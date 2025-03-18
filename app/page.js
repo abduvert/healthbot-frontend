@@ -1,8 +1,7 @@
 'use client'
-import Chat from "./chat/page";
-import GoogleSignInButton from "./custom-components/google_auth";
 import Script from "next/script";
 import { useEffect } from "react";
+import OnBoarding from "./auth/on-boarding/page";
 
 export default function Home() {
 
@@ -23,7 +22,7 @@ export default function Home() {
         strategy="afterInteractive"
         onLoad={() => console.log("Square SDK loaded!")}
       />
-      <GoogleSignInButton />
+      <OnBoarding />
     </main>
   );
 }

@@ -10,6 +10,7 @@ export default function CheckoutPage() {
   return (
     <div className="p-5">
       <h2 className="text-lg font-bold">Square Payment</h2>
+      {paymentStatus && <p className="mt-3">{paymentStatus}</p>}
     <div className="flex justify-center items-center h-[100vh] p-5">
       <PaymentForm
         applicationId={process.env.NEXT_PUBLIC_SQUARE_APP_ID}
@@ -25,7 +26,6 @@ export default function CheckoutPage() {
       >
         <CreditCard />
       </PaymentForm>
-      {paymentStatus && <p className="mt-3">{paymentStatus}</p>}
       </div>
     </div>
   );
